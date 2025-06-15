@@ -1,0 +1,20 @@
+* { font-family: "Nom Na Tong"; }
+
+/* for auto line-wrapping */
+figure { display: table; }
+figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+
+/* center elem on mobile */
+@media (min-width: 950px) {
+  .nom4vi-auto-float-right {
+    float: right;
+  }
+}
+@media (max-width: 950px) {
+  .nom4vi-auto-float-right {
+    margin: auto;
+  }
+}
