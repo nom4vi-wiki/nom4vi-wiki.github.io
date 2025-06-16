@@ -1,19 +1,19 @@
 * { font-family: "Nom Na Tong"; }
 
 /* for auto line-wrapping */
-figure { display: table; }
-figcaption {
+.nom4vi-smart-figure { display: table; }
+.nom4vi-smart-figure > figcaption {
   display: table-caption;
   caption-side: bottom;
 }
 
 /* center elem on mobile */
-@media (min-width: 950px) {
+@media (min-width: 960px) {
   .nom4vi-auto-float-right {
     float: right;
   }
 }
-@media (max-width: 950px) {
+@media (max-width: 960px) {
   .nom4vi-auto-float-right {
     margin: auto;
   }
