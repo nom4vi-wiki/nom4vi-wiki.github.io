@@ -18,3 +18,11 @@
     margin: auto;
   }
 }
+
+/* show images side-by-side */
+.nom4vi-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem;
+}
