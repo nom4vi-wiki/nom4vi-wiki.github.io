@@ -1,0 +1,41 @@
+* { font-family: "Nom Na Tong"; }
+
+/* for auto line-wrapping */
+.nom4vi-smart-figure { display: table; }
+.nom4vi-smart-figure > figcaption {
+  display: table-caption;
+  caption-side: bottom;
+}
+
+/* center elem on mobile */
+@media (min-width: 960px) {
+  .nom4vi-auto-float-left {
+    float: left;
+    margin-right: 1.5rem;
+  }
+  .nom4vi-auto-float-right {
+    float: right;
+    margin-left: 1.5rem;
+  }
+}
+@media (max-width: 960px) {
+  .nom4vi-auto-float-left, .nom4vi-auto-float-right {
+    margin: auto;
+  }
+}
+
+/* show images side-by-side */
+.nom4vi-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+/* contain the floating elems
+ * inside this container */
+.nom4vi-with-float:after {
+  content: "";
+  display: block;
+  clear: both;
+}
