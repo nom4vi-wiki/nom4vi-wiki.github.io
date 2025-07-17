@@ -39,3 +39,8 @@
   display: block;
   clear: both;
 }
+
+/* unfortunately, the styles provided by simple.css
+ * don't play well with floating elements.
+ * leaving it like this for now, FIXME. */
+details { width: fit-content; }
